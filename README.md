@@ -32,7 +32,7 @@ __*.DATA (.data)*__\
 - dq _(define quadword)_: alocă 8 bytes. Folosită pentru numere reale sau întregi.
 - dt _(define tenbytes)_: alocă 10 bytes. Folosită pentru numere reale sau numere în BCD.
 
-  ## Indicatori de stare (Status Flags)
+## Indicatori de stare (Status Flags)
 &nbsp; Se găsesc în cadrul registrului indicatorilor de stare. Registrul indicatorilor de stare este un registru special care are ca și rol ilustrarea unor stări (rezultatul unor operații aritmetice execuate în programul nostru cu extensia .asm). Indicatorii de stare sunt:
 - Overflow Flag (OF): apare în urma realizării unei operații aritmetice. Dacă este setat se subînțelege faptul că rezultatul operației nu încape în destinație
 - Direction Flag (DF): ilustrează direcția de procesare a elementelor dintr-un șir. Dacă este setat pe valoarea 0, atunci procesarea se va realiza de la adresa mai mică la cea mai mare. În caz contrat, procesarea va avea loc invers

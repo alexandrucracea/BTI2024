@@ -31,3 +31,15 @@ __*.DATA (.data)*__\
 - df, dp _(define for pointer)_: aloca 6 bytes. Folosită pentru numere reale
 - dq _(define quadword)_: alocă 8 bytes. Folosită pentru numere reale sau întregi.
 - dt _(define tenbytes)_: alocă 10 bytes. Folosită pentru numere reale sau numere în BCD.
+
+  ## Indicatori de stare (Status Flags)
+&nbsp; Se găsesc în cadrul registrului indicatorilor de stare. Registrul indicatorilor de stare este un registru special care are ca și rol ilustrarea unor stări (rezultatul unor operații aritmetice execuate în programul nostru cu extensia .asm). Indicatorii de stare sunt:
+- Overflow Flag (OF): apare în urma realizării unei operații aritmetice. Dacă este setat se subînțelege faptul că rezultatul operației nu încape în destinație
+- Direction Flag (DF): ilustrează direcția de procesare a elementelor dintr-un șir. Dacă este setat pe valoarea 0, atunci procesarea se va realiza de la adresa mai mică la cea mai mare. În caz contrat, procesarea va avea loc invers
+- Interrupt Flag (IF): permite procesorului să răspundă la apeluri externe (întreruperi)
+- Trap (Trace) Flag (TF): util pentru debugger, permițând execuția programului instrucțiune cu instrucțiune atunci când este setat
+- Sign Flag (SF): indică semnul rezultatului unei operații aritmetice
+- Zero Flag (ZF): ne ilustrează faptul că rezultatul unei operații aritmetice este 0
+- Auxiliary Carry Flag (AF): folosit rar, atunci când se realizeaza operații în BCD
+- Parity Flag (PF): dacă rezultatul unei operații conține un număr par de biți cu valoarea 1, flagul este setat. În caz contrar (număr impar de valori de 1) flagul va fi setat cu valoarea 0.
+- Carry Flag (CF): indică apariția transportului în cazul unei adunări sau scăderi

@@ -97,6 +97,27 @@ neg ax              ; AX = -AX (negare)
 ```assembly
 cmp ax, bx          ; Compară AX cu BX (setează flaguri)
 ```
+### Instrucțiuni logice și bitwise
+#### AND/OR/XOR (Operații logice)
+```assembly
+and ax, 0FFh        ; AND bitwise între AX și 0FFh
+or bx, 80h          ; OR între BX și 80h
+xor cx, cx          ; XOR între CX și CX (CX devine 0)
+```
+#### NOT (Negare)
+```assembly
+not ax              ; Inversează toți biții din AX
+```
+#### SHL/SHR (Shift logic la stânga/dreapta)
+```assembly
+shl ax, 1           ; Shift la stânga cu 1 bit
+shr bx, 2           ; Shift la dreapta cu 2 biți
+```
+### Instrucțiuni de control al fluxului
+#### JMP (Salt necondiționat)
+```assembly
+jmp myLabel         ; Sari la eticheta `myLabel`
+```
 
 ## Indicatori de stare (Status Flags)
 &nbsp; Se găsesc în cadrul registrului indicatorilor de stare. Registrul indicatorilor de stare este un registru special care are ca și rol ilustrarea unor stări (rezultatul unor operații aritmetice execuate în programul nostru cu extensia .asm). Indicatorii de stare sunt:

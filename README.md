@@ -5,8 +5,29 @@ Salutare, în cadrul acestui repo veți găsi explicații referitoare la instruc
 
 #
 
-# DIRECTIVE
+# Ce este Assembly?
+__Assembly__ este un limbaj de programare de tip low level, având o legătura directă cu procesul. Codul scris în Assembly este transformat în cod mașină și este executat direct de UCP(CPU).
 
+> [!IMPORTANT]
+>  __Avantaje:__
+> - Performanță ridicată, deoarece codul este executat direct de procesor.
+> - Control precis asupra hardware-ului.
+> - Ocupă mai puțin spațiu în memorie.
+>   
+> __Dezavantaje:__
+> - Dificultate ridicată în învățare și scriere.
+> - Lipsa portabilității (codul depinde de arhitectura procesorului).
+
+
+# Care este structura unui program in Assembly?
+Un program Assembly este împărțit în următoarele segmente:
+
+1. Segmentul __.MODEL:__ Definește modelul de memorie (ex.: small, medium, large).
+2. Segmentul __.STACK:__ Definește stiva programului.
+3. Segmentul __.DATA:__ Pentru date, variabile și constante.
+4. Segmentul __.CODE:__ Conține instrucțiunile programului.
+
+# DIRECTIVE
 __*.MODEL (.model)*__\
 &nbsp; Directiva utilizată pentru inițializarea modelului de memorie definește modul în care segmentele unui program sunt organizate și dispuse în memoria RAM.\
 &nbsp; Directiva model poate lua următoarele valori:\

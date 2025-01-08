@@ -291,6 +291,8 @@ INT 21H
 
 <br/> 
 
+[Exemple pentru WHILE, DO WHILE și FOR](https://stackoverflow.com/questions/28665528/while-do-while-for-loops-in-assembly-language-emu8086)
+
 ## Tips and Tricks
 > [!TIP]
 > - Denumiți etichetele și variabilele într-un mod sugestiv.

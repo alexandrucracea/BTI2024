@@ -104,7 +104,7 @@ dec bx              ; Decrementare BX cu 1
 ```assembly
 mov al, 5
 mul bl              ; AL = AL * BL (rezultat care nu ține cont de semn)
-imul ax, bx, 4      ; AX = BX * 4 (rezultat care ține cont de semn)
+imul bx             ; AX = AX * BX (rezultat care ține cont de semn)
 ```
 #### DIV/IDIV (Împărțire)
 ```assembly
